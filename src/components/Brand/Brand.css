@@ -1,0 +1,19 @@
+.brand-section {
+  background: linear-gradient(45deg, #FFA500, #FF4500);
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.brand-title h2 {
+  font-family: 'ClassiqueSaigon', serif;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+} 
