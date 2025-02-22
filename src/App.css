@@ -4,7 +4,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'ClassiqueSaigon', serif;
+  font-family: 'San Francisco', sans-serif;
 }
 
 main {
@@ -15,13 +15,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
   background-color: #fff;
   border-bottom: 1px solid #eee;
-}
-
-.logo-img {
-  height: 50px;
 }
 
 .main-nav ul {
@@ -81,5 +76,19 @@ main {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .App {
+    font-size: 95%;
+  }
+}
+
+/* Mobile (320px - 767px) */
+@media screen and (max-width: 767px) {
+  .App {
+    font-size: 90%;
   }
 }

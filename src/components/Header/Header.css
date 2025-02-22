@@ -1,14 +1,40 @@
 .header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: 'San Francisco', sans-serif;
+}
+
+.top-bar {
+  width: 100%;
+  align-items: center;
+  background-color: #8B0000;
+  color: white;
+  padding: 5px 5%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.9rem;
+}
+
+.contact-info {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-header {
+  width: 90%;
+  padding: 1rem 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #fff;
   border-bottom: 1px solid #eee;
 }
 
 .logo-img {
-  height: 80px;
+  height: 60px;
   width: auto;
   object-fit: contain;
 }
@@ -16,7 +42,7 @@
 .main-nav ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 2.5rem;
   margin: 0;
   padding: 0;
 }
@@ -24,21 +50,16 @@
 .main-nav a {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
-}
-
-@media (max-width: 768px) {
-  .main-nav {
-    display: none;
-  }
+  font-weight: 900;
+  font-size: 1.1rem;
+  font-family: 'San Francisco', sans-serif;
+  font-style: bold;
 }
 
 .cart-icon {
-  width: 20px;
-  height: 20px;
   background-color: #8B0000;
-  padding: 10px 40px;
-  border-radius: 10px;
+  padding: 8px 30px;
+  border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -49,6 +70,60 @@
   filter: brightness(0) invert(1);
 }
 
-.cart-icon:hover {
-  background-color: #660000;
+.menu-icon {
+  display: none;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .top-bar, .main-header {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .main-nav ul {
+    gap: 1.5rem;
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .top-bar {
+    display: flex;
+  }
+
+  .main-header {
+    padding: 0.8rem 2%;
+    display: flex;
+  }
+
+  .logo-img {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 300px;
+    font-size: 0.6rem;
+    font-family: 'San Francisco', sans-serif;
+    font-style: bold;
+  }
+  .cart-icon {
+    padding: 6px 20px;
+  }
+}
+
+/* Thêm menu hamburger cho mobile */
+.menu-icon {
+  display: flex;
+  cursor: pointer;
 } 

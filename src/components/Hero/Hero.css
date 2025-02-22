@@ -1,63 +1,65 @@
 .hero {
-  height: 80vh;
-  background-image: url('/public/hero.png');
+  top: 126px;
+  left: 0;
+  right: 0;
+  height: 90vh;
+  background: url('/public/Banner-Landscape-3.png') no-repeat center center;
   background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
+  justify-content: flex-start;
+  padding-left: 5%;
   position: relative;
 }
 
 .hero::before {
-  content: 'đây là content';
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
 }
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-.hero h1 {
-  font-family: 'ClassiqueSaigon', serif;
-  font-size: 3.5rem;
-  margin: 0;
-  padding: 0 2rem;
-  line-height: 1.4;
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .hero-container{
+    width: 100%;
+    height: 570px;
+  }
+  .hero{
+    background: url('/public/Banner-Landscape-3.png') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
   }
 }
 
-.hero-subtitle {
-  font-size: 1.5rem;
-  margin: 1rem 0 2rem;
-  opacity: 0.9;
-}
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-left: 3%;
+    text-align: center;
+    justify-content: center;
+  }
 
-.hero-cta {
-  background-color: #8B0000;
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+  .hero h1 {
+    font-size: 2.5rem;
+  }
 
-.hero-cta:hover {
-  background-color: #660000;
-  transform: translateY(-2px);
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hotline {
+    padding: 8px 15px;
+  }
+
+  .hotline span {
+    font-size: 1rem;
+  }
+
+  .phone-number {
+    font-size: 1.2rem;
+  }
 } 

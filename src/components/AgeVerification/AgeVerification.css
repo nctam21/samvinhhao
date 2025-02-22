@@ -62,4 +62,41 @@
 
 .btn-no:hover {
   background-color: #999;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .age-verification-modal {
+    max-width: 350px;
+  }
+
+  .age-verification-modal h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .age-verification-modal {
+    max-width: 300px;
+    padding: 1.5rem;
+  }
+
+  .age-verification-modal h2 {
+    font-size: 1.5rem;
+  }
+
+  .age-verification-modal p {
+    font-size: 1rem;
+  }
+
+  .age-verification-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .age-verification-buttons button {
+    width: 100%;
+    padding: 0.7rem;
+  }
 } 
