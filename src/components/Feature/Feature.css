@@ -1,95 +1,82 @@
 .feature-section {
   background-color: #8B0000;
   color: white;
-  padding: 4rem 5%;
+  padding: 6rem 5%;
   display: flex;
-  gap: 2rem;
-  position: relative;
+  gap: 4rem;
+  align-items: center;
 }
 
 .feature-content {
   flex: 1;
-  padding-right: 2rem;
 }
 
 .feature-content h2 {
-  font-family: 'sanfrancisco', serif;
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  font-family: 'San Francisco', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
   line-height: 1.3;
 }
 
 .feature-content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  opacity: 0.9;
 }
 
 .read-more {
-  font-family: 'sanfrancisco', serif;
+  font-family: 'San Francisco', sans-serif;
   background: transparent;
-  border: 1px solid white;
+  border: 2px solid white;
   color: white;
-  padding: 0.8rem 2rem;
-  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
   cursor: pointer;
-  font-size: 1.1rem;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .read-more:hover {
-  background-color: white;
+  background: white;
   color: #8B0000;
 }
 
-/* Tablet */
+.feature-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 1024px) {
   .feature-section {
-    padding: 3rem 3%;
+    padding: 4rem 3%;
+    gap: 3rem;
   }
 
   .feature-content h2 {
-    font-size: 2.2rem;
-  }
-
-  .feature-content p {
-    font-size: 1rem;
+    font-size: 2.5rem;
   }
 }
 
-/* Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .feature-section {
-    padding: 2rem 2%;
     flex-direction: column;
-  }
-
-  .feature-content {
-    padding-right: 0;
+    padding: 3rem 2%;
+    gap: 2rem;
+    text-align: center;
   }
 
   .feature-content h2 {
-    font-size: 1.8rem;
-  }
-
-  .read-more {
-    padding: 0.7rem 1.5rem;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .feature-image {
-    min-height: 300px;
-    margin-top: 2rem;
+    max-width: 100%;
   }
-}
-
-.feature-image {
-  width: 30%;
-  
-  position: relative;
-  min-height: 550px;
-  background-image: url('/public/item-1.png');
-  background-size: cover;
-  background-position: center;
-  border-radius: 35px;
 } 

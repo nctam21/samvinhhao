@@ -1,51 +1,59 @@
 .brand-section {
-  background: linear-gradient(45deg, #FFA500, #FF4500);
-  padding: 4rem 5%;
-  text-align: center;
-  color: white;
+  background-image: url('/public/background-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #810D0D;
   position: relative;
+  padding: 2rem 5%;
 }
 
-.brand-title h2 {
-  font-family: 'ClassiqueSaigon', serif;
+.brand-content h2 {
+  font-family: 'San Francisco', sans-serif;
   font-size: 3rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
-
-.social-icons {
+.product-list {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 2rem;
-  margin-top: 2rem;
-}
-
-.social-icon {
-  width: 40px;
-  height: 40px;
-  background: white;
-  border-radius: 50%;
+}   
+.product-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease;
+  flex-direction: row;
+  gap: 1rem;
+}
+.product-item img {
+  width: 25%;
+  height: 25%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.social-icon:hover {
-  transform: translateY(-5px);
+.product-item-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  text-align: left;
 }
 
-.social-icon img {
-  width: 20px;
-  height: 20px;
+.product-item-content ul {
+  list-style-type: none;
+  font-size: 1.2rem;
 }
-
+.product-item-content ul li {
+  margin-bottom: 1rem;
+}
 /* Tablet */
 @media screen and (max-width: 1024px) {
   .brand-section {
     padding: 2.5rem 3%;
   }
 
-  .brand-title h2 {
+  .brand-content h2 {
     font-size: 2.5rem;
   }
 }
@@ -56,11 +64,11 @@
     padding: 2rem 2%;
   }
 
-  .brand-title h2 {
+  .brand-content h2 {
     font-size: 2rem;
   }
 
-  .social-icons {
+  .product-list {
     gap: 1rem;
   }
 } 
