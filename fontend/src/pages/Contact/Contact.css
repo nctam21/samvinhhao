@@ -42,10 +42,16 @@
   display: flex;
   gap: 2rem;
   margin-bottom: 1.5rem;
+  justify-content: space-between;
 }
 
 .form-group {
   flex: 1;
+}
+.form-group input{
+  align-content: center;
+  width: 95%;
+  margin-left: 2.5%;
 }
 
 input, textarea {
